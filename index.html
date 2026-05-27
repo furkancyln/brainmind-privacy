@@ -69,7 +69,7 @@
       <div class="top">
         <div>
           <h1 id="title">BrainMind – Support</h1>
-          <p class="sub"><strong>For support or feedback:</strong>furkancyln13@gmail.com</p>
+          <p class="sub"><strong>furkancyln13@gmail.com</strong></p>
         </div>
         <div>
           <h1 id="title">BrainMind – Gizlilik Politikası</h1>
@@ -210,6 +210,7 @@
       const trBtn = document.getElementById('trBtn');
       const enBtn = document.getElementById('enBtn');
       const title = document.getElementById('title');
+      const title2 = document.getElementById('title2');
       const updated = document.getElementById('updated');
 
       if(lang === 'en'){
@@ -218,6 +219,7 @@
         trBtn.classList.remove('active');
         enBtn.classList.add('active');
         title.textContent = 'BrainMind – Privacy Policy';
+        title2.textContent = 'BrainMind – Support';
         updated.innerHTML = '<strong>Last updated:</strong> 03.03.2026';
         localStorage.setItem('brainmind_lang', 'en');
       }else{
@@ -226,6 +228,7 @@
         enBtn.classList.remove('active');
         trBtn.classList.add('active');
         title.textContent = 'BrainMind – Gizlilik Politikası';
+        title2.textContent = 'BrainMind – Destek';
         updated.innerHTML = '<strong>Son Güncelleme:</strong> 03.03.2026';
         localStorage.setItem('brainmind_lang', 'tr');
       }
